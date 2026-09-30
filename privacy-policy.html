@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Salah Tracker</title>
+    <meta name="description" content="Privacy Policy for Salah Tracker app. Understand how we collect, use, and protect your data for prayer calculations and accountability features.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0B131F;
+            --bg-card: #132238;
+            --bg-card-hover: #1A2D48;
+            --emerald-primary: #10B981;
+            --emerald-light: #34D399;
+            --emerald-glow: rgba(16, 185, 129, 0.15);
+            --text-main: #F1F5F9;
+            --text-muted: #94A3B8;
+            --text-dim: #64748B;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(16, 185, 129, 0.3);
+            --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Header Navigation */
+        header {
+            background-color: rgba(11, 19, 31, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #10B981 0%, #047857 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .brand-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: #FFFFFF;
+        }
+
+        .app-badge {
+            background: var(--emerald-glow);
+            border: 1px solid var(--border-highlight);
+            color: var(--emerald-light);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            letter-spacing: 0.02em;
+        }
+
+        /* Hero Banner */
+        .hero {
+            padding: 3.5rem 1.5rem 2.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 1rem 1.25rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item span.label {
+            color: var(--text-dim);
+        }
+
+        .meta-item span.value {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* Content Container */
+        .content {
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            padding: 0 1.5rem;
+            width: 100%;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.75rem;
+            box-shadow: var(--shadow);
+            transition: border-color 0.2s ease;
+        }
+
+        .section-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .section-card h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-card h2 svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--emerald-light);
+            stroke-width: 2;
+            fill: none;
+            flex-shrink: 0;
+        }
+
+        .section-card p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-size: 0.975rem;
+        }
+
+        .section-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-card ul {
+            list-style: none;
+            margin: 1rem 0;
+            padding: 0;
+        }
+
+        .section-card li {
+            position: relative;
+            padding-left: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .section-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--emerald-light);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: var(--emerald-glow);
+            border-left: 4px solid var(--emerald-primary);
+            padding: 1.25rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.25rem 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .permission-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-family: monospace;
+            color: var(--emerald-light);
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(19, 34, 56, 1) 100%);
+            border: 1px solid var(--border-highlight);
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .contact-box h2 {
+            justify-content: center;
+        }
+
+        .email-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--emerald-primary);
+            color: #FFFFFF;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.75rem 1.75rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        .email-btn:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            background-color: rgba(11, 19, 31, 0.95);
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.875rem;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--emerald-light);
+        }
+
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 1.85rem;
+            }
+            .section-card {
+                padding: 1.5rem;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="brand">
+                <div class="brand-icon">
+                    <!-- Crescent Moon / Prayer SVG Icon -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20A8 8 0 0 1 4 12A8 8 0 0 1 12 4Z" opacity="0.3"/>
+                        <path d="M12 3a9 9 0 1 0 9 9c-.83 0-1.54-.5-1.85-1.22A7 7 0 1 1 10.78 4.15C11.5 3.84 12 3.13 12 3z"/>
+                    </svg>
+                </div>
+                <span>Salah Tracker</span>
+            </a>
+            <span class="app-badge">Privacy & Security</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">Privacy Policy</h1>
+        <p class="hero-subtitle">Transparency regarding your data, location usage, and privacy rights in Salah Tracker.</p>
+        
+        <div class="meta-info">
+            <div class="meta-item">
+                <span class="label">App Name:</span>
+                <span class="value">Salah Tracker</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Package ID:</span>
+                <span class="value">com.sakib.salahtracker</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Last Updated:</span>
+                <span class="value">October 1, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- 1. Introduction -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                1. Introduction
+            </h2>
+            <p>Welcome to <strong>Salah Tracker</strong> ("we," "our," or "us"). Salah Tracker is designed to help Muslims stay consistent with their five daily prayers through habit streaks, real-time prayer calculations, and optional friend accountability.</p>
+            <p>We take your privacy seriously. This Privacy Policy explains what information we access, collect, and use, as well as your rights regarding that information when using our mobile application (iOS & Android).</p>
+        </article>
+
+        <!-- 2. Location Information -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                2. Location Information & Usage
+            </h2>
+            <p>To accurately compute daily Islamic Prayer times (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha), Salah Tracker requires access to your device's geographical location.</p>
+
+            <div class="highlight-box">
+                <p>🔒 <strong>Local Location Processing:</strong> Your precise GPS coordinates (Latitude and Longitude) are used exclusively on your device to calculate accurate astronomical prayer times using standard mathematical algorithms (Adhan). Your raw location is <u>never sold, uploaded, or transmitted</u> to remote advertising or tracking servers.</p>
+            </div>
+
+            <p><strong>Permissions Used:</strong></p>
+            <ul>
+                <li><strong>Foreground Location Access (GPS):</strong> Used to fetch current latitude and longitude when opening the app or refreshing prayer times.</li>
+                <li><strong>Reverse Geocoding:</strong> Converts coordinates into a city and country name to display on your local app dashboard.</li>
+            </ul>
+
+            <div class="badge-list">
+                <span class="permission-badge">ACCESS_FINE_LOCATION</span>
+                <span class="permission-badge">ACCESS_COARSE_LOCATION</span>
+            </div>
+        </article>
+
+        <!-- 3. Account & Friend Features -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                3. User Account & Data Storage
+            </h2>
+            <p>Salah Tracker offers both local standalone features and cloud-assisted social tracking features:</p>
+            <ul>
+                <li><strong>Local Device Storage:</strong> Your daily prayer logs (Prayed, Delayed, Missed, Excused), streaks, points, and application preferences are stored locally on your device using encrypted key-value storage (`AsyncStorage`).</li>
+                <li><strong>Optional Cloud Account (Supabase):</strong> If you choose to sign up with Google or Email to connect with friends, we store minimal account information (such as your account ID, display name, and prayer status counts) in our backend cloud database (`Supabase`) to sync status updates with your connected friends.</li>
+            </ul>
+        </article>
+
+        <!-- 4. Push Notifications -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                4. Notifications & Reminders
+            </h2>
+            <p>If permitted, Salah Tracker delivers local push notifications to alert you when prayer times begin or when reminder countdowns complete.</p>
+            <p>Notifications are scheduled locally by your device OS. You may disable notification permissions at any time in your device settings.</p>
+        </article>
+
+        <!-- 5. Data Sharing & Third-Party Services -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                5. Third-Party Services & Data Sharing
+            </h2>
+            <p>We respect your privacy and do <strong>not sell, rent, or monetize</strong> your personal data to third parties, ad networks, or data brokers. We do not include third-party advertising SDKs.</p>
+            <p>We use the following trusted infrastructure services:</p>
+            <ul>
+                <li><strong>Expo SDK:</strong> Core framework for application runtime and location access.</li>
+                <li><strong>Supabase:</strong> Secure cloud database and authentication provider for friend sync.</li>
+                <li><strong>Adhan JS Library:</strong> Open-source, client-side mathematical prayer calculation engine.</li>
+            </ul>
+        </article>
+
+        <!-- 6. Children's Privacy -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3-11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm6 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-6 4a4.5 4.5 0 0 0 6 0"/></svg>
+                6. Children's Privacy
+            </h2>
+            <p>Salah Tracker is designed for general audiences and is safe for users of all ages. We do not knowingly collect personal information from children under the age of 13. If you believe a child has provided us with personal information, please contact us so we can immediately delete it.</p>
+        </article>
+
+        <!-- 7. Data Retention & Deletion -->
+        <article class="section-card">
+            <h2>
+                <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+                7. Data Retention & Account Deletion
+            </h2>
+            <p>Local data can be cleared at any time by clearing the application storage or uninstalling the Salah Tracker app from your device.</p>
+            <p>If you created an online account, you may request complete account and data deletion at any time by contacting us through the support email below.</p>
+        </article>
+
+        <!-- 8. Contact Us -->
+        <article class="section-card contact-box">
+            <h2>
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                8. Contact & Developer Information
+            </h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the developer team:</p>
+            <a href="mailto:support@salahtracker.app" class="email-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Contact Developer
+            </a>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Salah Tracker (com.sakib.salahtracker). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
